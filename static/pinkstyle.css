@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Comic Sans MS';
+  src: url("local-fonts/comic-sans-ms/comici.ttf");
+}
+
 body {
 	font-family: "Comic Sans MS", Arial, sans-serif;
 	background: #fff0f6 ;
