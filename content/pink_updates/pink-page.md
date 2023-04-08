@@ -1,6 +1,8 @@
 ---
 title: "Pink Page"
 date: 2023-04-06T17:07:48+01:00
-style: "/pinkstyle.css"
+style: "frilly"
+draft: false
+tags: ["test"]
 ---
-♡Testing html stuff. This should be centered.♡
+{{< rawhtml >}}{{< renderhtml "static/pink_updates/pink_page.md" >}}{{< /rawhtml >}}

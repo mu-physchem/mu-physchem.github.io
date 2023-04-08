@@ -1,0 +1,23 @@
+<script>
+    function setDefault(){
+        localStorage.setItem("style", "default");
+        location.reload();
+    }
+    function setFrilly(){
+        localStorage.setItem("style", "frilly");
+        location.reload();
+    }
+</script>
+<button onclick="setDefault()">Default</button>
+<button onclick="setFrilly()">Frilly</button>
+<p id="itemValue"></p>
+<script>
+    document.getElementById("itemValue").innerHTML = localStorage.getItem("style");
+    var css_link = "/styles/"+localStorage.getItem("style")+".css";
+    if (css_link === "/styles/null.css") {
+        css_link = "/styles/default.css";
+    }
+
+    var tmp_element = document.getElementById("dynamic_css_href");
+    tmp_element.setAttribute("href", css_link);
+</script>

@@ -4,8 +4,8 @@
 	<title>{{ if not .IsHome }}{{ .Title | title }} | {{ end }}{{ .Site.Title }}</title>
 	<link rel="canonical" href="{{ .Site.BaseURL }}">
 	<link rel='alternate' type='application/rss+xml' title="{{ .Site.Title }} RSS" href='/index.xml'>
-    <link rel='stylesheet' type='text/css' href= "{{ .Param "style" }}">
-	{{ with .Site.Params.favicon }}<link rel="icon" href="{{ . }}">
+    <link rel='stylesheet' type='text/css' id="dynamic_css_href" href= "/styles/default.css">
+	{{ with .Site.Params.favicon }}<link rel="icon" href="">
 	{{ end -}}
 	<meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}">
 	{{ if isset .Params "tags" }}<meta name="keywords" content="{{ with .Params.tags }}{{ delimit . ", " }}{{ end }}">
@@ -28,8 +28,7 @@
 </main>
 {{ block "footer" . }}
 <footer>
-	<a href="{{ .Site.BaseURL }}">{{ .Site.BaseURL }}</a>
-	{{- if .Param "showrss" }}<br><br><a href="/index.xml"><img src="/rss.svg" style="max-height:1.5em" alt="RSS Feed" title="Subscribe via RSS for updates."></a>{{ end }}
+    {{ partial "theme_switch.html" }}
 </footer>
 {{ end }}
 </body>

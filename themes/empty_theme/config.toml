@@ -16,5 +16,5 @@ languageCode = 'en-us'
   taglist = true
   showrss = true
 
-  #stylesheet
-  style = "/style.css"
+  #style
+  style = "default"

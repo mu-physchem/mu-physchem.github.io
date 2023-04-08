@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Comic Sans MS';
-  src: url("local-fonts/comic-sans-ms/comici.ttf");
+  src: url("local-fonts/comici.ttf");
 }
 
 body {
@@ -8,6 +8,10 @@ body {
 	background: #fff0f6 ;
 	color: #bc0065 ;
 	text-align: center ;
+}
+
+.pink-mode {
+    background-color: #ffffff ;
 }
 
 main {
