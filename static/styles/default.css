@@ -43,3 +43,37 @@ footer {
 #nextart,#prevart {
 	max-width: 33% ;
 }
+
+/* For theme switch */
+.theme_switch {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align:justify;
+}
+
+.theme_switch button {
+  width: 33%;
+  background-color: #04AA6D; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+/* Clear floats (clearfix hack) */
+.theme_switch:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.theme_switch button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.theme_switch button:hover {
+  background-color: #3e8e41;
+}

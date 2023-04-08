@@ -7,17 +7,21 @@
         localStorage.setItem("style", "frilly");
         location.reload();
     }
+    function setDepartment(){
+        localStorage.setItem("style", "department");
+        location.reload();
+    }
 </script>
-<button onclick="setDefault()">Default</button>
-<button onclick="setFrilly()">Frilly</button>
-<p id="itemValue"></p>
+<div class="theme_switch">
+    <button onclick="setDefault()">Default</button>
+    <button onclick="setFrilly()">Frilly</button>
+    <button onclick="setDepartment()">Department</button>
+</div>
 <script>
-    document.getElementById("itemValue").innerHTML = localStorage.getItem("style");
     var css_link = "/styles/"+localStorage.getItem("style")+".css";
     if (css_link === "/styles/null.css") {
         css_link = "/styles/default.css";
     }
-
     var tmp_element = document.getElementById("dynamic_css_href");
     tmp_element.setAttribute("href", css_link);
 </script>

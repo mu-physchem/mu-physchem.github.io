@@ -22,8 +22,12 @@
 {{ block "main" . }}
 {{ .Content }}
 {{ end }}
+<div>
 {{ if .Param "nextprev" }}{{ partial "nextprev.html" . -}}{{ end -}}
+<br>
 {{ if .Param "taglist" }}{{ partial "taglist.html" . }}{{ end -}}
+<br>
+</div>
 </article>
 </main>
 {{ block "footer" . }}
