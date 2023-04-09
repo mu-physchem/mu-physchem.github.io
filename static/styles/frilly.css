@@ -71,6 +71,7 @@ footer {
 }
 
 .theme_switch button {
+  cursor: pointer; /* Pointer/hand icon */
 	color: #f9e6e6 ;
 	background-color: #f765a3;
     font-family : inherit;
@@ -101,4 +102,28 @@ p:before {
 }
 p:after {
   content: " ♡";
+}
+
+.sidenav {
+    background-color: #1d3142;
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    overflow-x: hidden;
+    z-index: 1;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
 }

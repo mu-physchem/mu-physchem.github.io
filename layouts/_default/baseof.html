@@ -2,6 +2,7 @@
 <html lang="{{ .Site.Language }}">
 <head>
 	<title>{{ if not .IsHome }}{{ .Title | title }} | {{ end }}{{ .Site.Title }}</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
 	<link rel="canonical" href="{{ .Site.BaseURL }}">
 	<link rel='alternate' type='application/rss+xml' title="{{ .Site.Title }} RSS" href='/index.xml'>
     <link rel='stylesheet' type='text/css' id="dynamic_css_href" href= "/styles/default.css">
@@ -18,6 +19,12 @@
 {{ if .Site.Menus.main }}{{ partial "nav.html" . }}{{ end -}}
 <main>
 <header><h1 id="tag_{{ .Title }}">{{ block "title" . }}{{ end }}</h1></header>
+<div class="sidenav">
+  <a>About</a>
+  <a>Services</a>
+  <a>Clients</a>
+  <a>Contact</a>
+</div>
 <article>
 {{ block "main" . }}
 {{ .Content }}
@@ -35,5 +42,6 @@
     {{ partial "theme_switch.html" }}
 </footer>
 {{ end }}
+<div><br><br><br></div>
 </body>
 </html>
