@@ -14,10 +14,12 @@
 </script>
 <div class="optional_box">
 </div>
-<div class="theme_switch">
-    <button onclick="setDefault()">Default</button>
-    <button onclick="setFrilly()">Frilly</button>
-    <button onclick="setDepartment()">Department</button>
+<div class="theme_switch_container">
+    <div class="theme_switch">
+        <button onclick="setDefault()">Default</button>
+        <button onclick="setFrilly()">Frilly</button>
+        <button onclick="setDepartment()">Department</button>
+    </div>
 </div>
 <script>
     var css_link = "/styles/"+localStorage.getItem("style")+".css";
