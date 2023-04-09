@@ -14,16 +14,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="robots" content="index, follow">
 	<meta charset="utf-8">
+    <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
 </head>
 <body>
-{{ if .Site.Menus.main }}{{ partial "nav.html" . }}{{ end -}}
+    {{ if .Site.Menus.main }}{{ partial "nav.html" . }}{{ end -}}
 <main>
 <header><h1 id="tag_{{ .Title }}">{{ block "title" . }}{{ end }}</h1></header>
 <div class="sidenav">
-  <a>About</a>
-  <a>Services</a>
-  <a>Clients</a>
-  <a>Contact</a>
+  <a href="/">Home</a>
 </div>
 <article>
 {{ block "main" . }}
