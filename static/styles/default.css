@@ -8,7 +8,8 @@ body {
     background-image: url(images/deep-field.webp);
     background-image: url(images/aurora.jpg);
     background-image: url(images/tileable.png);
-    background-size: cover;
+    background-repeat: repeat-y;
+    background-size: 100%;
 }
 
 main {
@@ -22,7 +23,8 @@ main {
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
+    font-size: 11px;
 }
 
 img {
@@ -72,7 +74,7 @@ footer {
 .theme_switch {
     position: fixed;
     bottom: 10px;
-    width: 500px;
+    width: 350px;
     text-align:justify;
 }
 
@@ -85,7 +87,7 @@ footer {
     padding: 4px 10px; /* Some padding */
     cursor: pointer; /* Pointer/hand icon */
     float: left; /* Float the buttons side by side */
-    font-size: 16px;
+    font-size: 14px;
 }
 
 /* Clear floats (clearfix hack) */
@@ -130,7 +132,7 @@ footer {
     z-index: 1;
     background-image: url(images/extra_white_logo_transparent_background.png);
     background-position: 50% 92%;
-    background-size: 100px 100px;
+    background-size: 110px 100px;
     background-repeat: no-repeat;
 }
 
