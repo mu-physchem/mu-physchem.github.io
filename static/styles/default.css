@@ -63,6 +63,10 @@ footer {
 	max-width: 33% ;
 }
 
+a:visited {
+    color: grey;
+}
+
 /* For theme switch */
 .theme_switch_container {
     margin-left: 160px;

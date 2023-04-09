@@ -1,4 +1,4 @@
-title = "Website Name"
+title = "mu-physchem"
 baseURL = 'https://mu-physchem.github.io/site'
 languageCode = 'en-us'
 
@@ -15,6 +15,3 @@ languageCode = 'en-us'
   nextprev = true
   taglist = true
   showrss = true
-
-  #style
-  style = "default"
