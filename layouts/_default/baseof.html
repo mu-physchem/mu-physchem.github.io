@@ -20,11 +20,7 @@
     {{ if .Site.Menus.main }}{{ partial "nav.html" . }}{{ end -}}
 <main>
 <header><h1 id="tag_{{ .Title }}">{{ block "title" . }}{{ end }}</h1></header>
-<div class="sidenav">
-  <a href="/">Home</a>
-  <a href="/our_committee">Our committee</a>
-  <a href="/mission_statement">Mission statement</a>
-</div>
+{{ partial "sidenav.html" }}
 <article>
 {{ block "main" . }}
 {{ .Content }}

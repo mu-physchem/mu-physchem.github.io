@@ -113,10 +113,14 @@ link {
     padding-top: 20px;
     overflow-x: hidden;
     z-index: 1;
-    background-image: url(images/extra_white_logo_transparent_background.png);
-    background-position: 50% 90%;
-    background-size: 110px 100px;
-    background-repeat: no-repeat;
+}
+
+.sidenav img {
+    height: 100px;
+    width: 110px;
+    position: absolute;
+    bottom: 60px;
+    left: 15px;
 }
 
 .sidenav a {

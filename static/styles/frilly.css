@@ -125,10 +125,6 @@ p:after {
     border-width: 10px;
     border-color: white;
     background-color: #e38aae;
-    background-image: url(images/extra_white_logo_transparent_background.png);
-    background-position: 50% 90%;
-    background-size: 110px 100px;
-    background-repeat: no-repeat;
     height: 100%;
     width: 140px;
     position: fixed;
@@ -137,8 +133,16 @@ p:after {
     padding-top: 20px;
     overflow-x: hidden;
     z-index: 1;
-/*    background-image: url(images/heart-tiles.webp);*/
+    /*background-image: url(images/heart-tiles.webp);*/
     background-size: 100%;
+}
+
+.sidenav img {
+    height: 140px;
+    width: 130px;
+    position: absolute;
+    bottom: 60px;
+    left: 5px;
 }
 
 .sidenav a {
