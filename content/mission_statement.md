@@ -1,7 +1,7 @@
 ---
 title: "Mission statement"
 date: 2023-04-09T20:00:01+01:00
-draft: false
+draft: true
 ---
 
 Black holes, quantum mechanics, x-rays, nuclear fusion, liquid nitrogen, supernovae, special relativity, rocket science, all of biology, all of engineering, none of sociology, metaphysics, particle accelerators, cosmology, applied philosophy, stargazing, ooblek!
